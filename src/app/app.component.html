@@ -1,0 +1,19 @@
+<igx-nav-drawer [isOpen]="true" [pin]="true" width="320px" class="nav-drawer">
+  <ng-template igxDrawer>
+    <div igxDrawerItem [active]="isActive(`/basic-cards`)" [routerLink]="[`/basic-cards`]">
+      <igx-icon class="icon">
+        credit_card
+      </igx-icon>
+      <span>Basic card types</span>
+    </div>
+    <div igxDrawerItem [active]="isActive(`/equal-height-cards`)" [routerLink]="[`/equal-height-cards`]">
+      <igx-icon class="icon">
+        height
+      </igx-icon>
+      <span>Equal height cards</span>
+    </div>
+  </ng-template>
+</igx-nav-drawer>
+<div class="view-container">
+  <router-outlet></router-outlet>
+</div>
