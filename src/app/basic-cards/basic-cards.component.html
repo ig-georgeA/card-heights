@@ -97,11 +97,11 @@
     </igx-card-actions>
   </igx-card>
   <div class="row-layout group_1">
-    <igx-card [horizontal]="true" class="vertical-actions-false">
+    <igx-card [horizontal]="true" class="card_1">
       <div class="column-layout group_2">
         <igx-card-header>
           <h3 igxCardHeaderTitle>
-            You Are Not the User
+            Actions vertical false
           </h3>
           <h5 igxCardHeaderSubtitle>
             Design Principles
@@ -112,10 +112,10 @@
             Vivamus id mi suscipit, eleifend nisi vitae, iaculis eros. Morbi ex magna, lobortis eget justo eu, tincidunt faucibus ante. Duis laoreet feugiat est, eget aliquet sem. Phasellus molestie tincidunt enim. Etiam dictum justo felis, id sollicitudin velit egestas vel. Ut convallis augue et ultrices tincidunt. Proin viverra dui sed ante convallis dictum. Maecenas id velit ipsum.
           </p>
         </igx-card-content>
-        <igx-card-actions class="actions-content">
+        <igx-card-actions [vertical]="false">
           <ng-container igxStart>
             <button igxButton="contained" type="button" class="button">
-              Vertical-False
+              Button
             </button>
           </ng-container>
         </igx-card-actions>
